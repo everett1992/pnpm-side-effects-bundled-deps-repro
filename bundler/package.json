@@ -1,0 +1,16 @@
+{
+  "name": "demo-bundler",
+  "version": "1.0.0",
+  "description": "A package that bundles is-number and has a trivial postinstall script.",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "is-number": "7.0.0"
+  },
+  "bundledDependencies": [
+    "is-number"
+  ],
+  "scripts": {
+    "postinstall": "echo built"
+  }
+}

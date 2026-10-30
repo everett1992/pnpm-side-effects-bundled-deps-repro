@@ -1,0 +1,7 @@
+{
+  "name": "app",
+  "private": true,
+  "dependencies": {
+    "demo-bundler": "1.0.0"
+  }
+}

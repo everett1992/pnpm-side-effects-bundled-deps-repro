@@ -1,0 +1,16 @@
+# A throwaway local registry: demo-bundler is hosted here, everything else comes from npmjs.
+storage: ./.work/pnpr-storage
+registries:
+  local:
+    type: hosted
+    packages:
+      demo-bundler:
+        publish: $all
+  npmjs:
+    type: upstream
+    url: https://registry.npmjs.org/
+    public: true
+  main:
+    type: router
+    sources: [local, npmjs]
+defaultRegistry: main
